@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Oтчет ВКР </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/bao1.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Чинь Куок Бао</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-error"></i> <span>Асин-програм и рас-кэш</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>DbContextPool</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Работа с JSON</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Оптимизация LINQ</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bxl-instagram-alt"></i> <span>ИСПОЛЬЗОВАНИЕ gRPC</span></a></li>
+		  <li><a href="#Обратная" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Обратная связь</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1 style="text-align: center;">Oтчет о практике ВКР   
+	  </h1>
+    <!--  <p>I'm <span data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> -->
+	<p style="text-align: center;" > подходы к оптимизации производительности веб-приложений на платформе asp.net </p>
+	
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Асинхронное программирование и распределенное кэширование</h2>
+          <p>Ниже приведены результаты теста сравнения оптимальной скорости при использовании асинхронного программирования и распределенного кэширования.</p> </br>
+		  
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/bat-dong-bo.png" class="img-fluid" alt="">
+		 
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>MVC-паттерн</h3>
+            <p class="fst-italic">
+              Сравните скорость asp.net mvc с веб-формой:
+            </p>
+         
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Name</th>
+							<th>Time (ms)</th>
+							
+						</tr>
+						<tr>
+							<td>Webform</td>
+							<td>70ms</td>
+							
+						</tr>
+						<tr>
+							<td>ASP MVC</td>
+							<td>10ms</td>
+							
+						</tr>
+						
+			</table>	
+            <p>
+             ASP.NET MVC показывает пустое представление не более чем за 7 миллисекунд (но при первой загрузке приложения, времени компиляции плюс время рендеринга) и Интернет-формы отображать ту же пустую форму не менее чем за 70 миллисекунд. Даже если абсолютное значение бесполезно, относительное значение является доказательством очень разного минимального значения тайм-аута для двух конструкций. ASP.NET MVC почти в 10 раз лучше веб-форм!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+	
+	<!-- lap trinh bat dong bo -->
+	<section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Асинхронное программирование</h2>
+          <p>Ниже приведен тест производительности с использованием асинхронного и синхронного программирования.</p> </br>
+		   <p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже: </br>
+			  <a href="docker push bao2976/testmultilthread:tagname">docker pull bao2976/testmultilthread</a></br>
+			  <a href="https://github.com/itmo308555/testmultithread">https://github.com/itmo308555/testmultithread</a>
+            </p>
+		  
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/bat-dong-bo-2.png" class="img-fluid" alt="">
+		 
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Результаты сравнения скорости:</h3>
+            
+         
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Name</th>
+							<th>Time (ms)</th>
+							
+						</tr>
+						<tr>
+							<td>синхронное программирование</td>
+							<td>6000ms</td>
+							
+						</tr>
+						<tr>
+							<td>асинхронное программирование</td>
+							<td>2000ms</td>
+							
+						</tr>
+						
+			</table>	
+            <p>
+             Результаты тестов показывают, что написание кода по асинхронной модели приводит к отклику в 3 раза быстрее, чем написание кода обычным способом!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+	
+	<!-- bo nho dem phan tan -->
+	<section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Распределенное кэширование</h2>
+          <p>Ниже показана оптимизация скорости с использованием распределенного кэширования для веб-приложения ASP.NET.</p> </br>
+		   
+		  
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/bat-dong-bo-3.png" class="img-fluid" alt="">
+		 
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Результаты сравнения скорости:</h3>
+           
+         
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Name</th>
+							<th>Time (ms)</th>
+							
+						</tr>
+						<tr>
+							<td>NoCache</td>
+							<td>314ms</td>
+							
+						</tr>
+						<tr>
+							<td>Cache</td>
+							<td>37ms</td>
+							
+						</tr>
+						
+			</table>	
+            <p>
+             Когда нами было запущено приложение без использования кэша потребовалось 314мс, чтобы ответить на 406 сообщений в базе данных. При использовании кэша тот же объем данных был получен за 37мс. Быстродействие сайта увеличилось более чем в 10 раз по сравнению с тем, когда не используется распределенное кэширование.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+	
+
+   
+
+    <!-- ======= DbContextPool Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>DbContextPool </h2>
+          <p>результаты тестов при использовании dbcontextpool для оптимизации скорости приложений .NET Core</p>
+		  <p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			   <a href="docker pull bao2976/dbcontextpoolv1">docker pull bao2976/dbcontextpoolv1</a></br>
+			  <a href="https://github.com/itmo308555/test_dbcontextpool">https://github.com/itmo308555/test_dbcontextpool</a>
+           </p>
+        </div>
+
+          <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/bat-dong-bo-4.png" class="img-fluid" alt="">
+		 
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>Для оценки скорости обработки запросов DbContext и DbContextPool создается небольшой тест. Для измерения производительности используется инструмент Apache Bechmarking Tool.
+Первый эксперимент заключается в том, что в 10 объектов отправляется по 100 запросов. Выполнение скрипта показано на рисунке 9, результаты показаны в таблице 1.
+</p>
+           
+         
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Name</th>
+							<th>Time take for tests (s)</th>
+							<th>Requests per sencond (s)</th>
+							<th>Time per Request (s)</th>
+							
+						</tr>
+						<tr>
+							<td>DbContext</td>
+							<td>4.71</td>
+							<td>21.23</td>
+							<td>47.101</td>
+						</tr>
+						<tr>
+							<td>DbContextPool</td>
+							<td>3.896</td>
+							<td>25.57</td>
+							<td>38.96</td>
+							
+						</tr>
+						
+			</table>	
+            <p>
+             Данные, приведенные в таблице 1, показывают, что разница между двумя методами невелика.
+            </p>
+          </div>
+        </div>
+		</br>
+		</br>
+		</br>
+		</br>
+		
+		 <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/bat-dong-bo-5.png" class="img-fluid" alt="">
+		 
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <p>Во втором эксперименте количество запросов увеличивается до 10.000, а количество объектов до 100. Выполнение скрипта показано на рисунке 10, результаты показаны в таблице 2.
+</p>
+           
+         
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Name</th>
+							<th>Time take for tests (s)</th>
+							<th>Requests per sencond (s)</th>
+							<th>Time per Request (s)</th>
+							
+						</tr>
+						<tr>
+							<td>DbContext</td>
+							<td>570.071</td>
+							<td>17.54</td>
+							<td>67.007</td>
+						</tr>
+						<tr>
+							<td>DbContextPool</td>
+							<td>478.484</td>
+							<td>20.57</td>
+							<td>47.848</td>
+							
+						</tr>
+						
+			</table>	
+            <p>
+             Данные, приведенные в таблице 2, показывают, что разница между двумя методами существенна по сравнению с таблицей 1.
+Используя DbContextPooling, количество и время отклика программы довольно хорошо повышают производительность. Среднее количество запросов в секунду приложение будет обрабатывать быстрее, чем раньше. Это очень маленькое приложение, и результаты, вероятно, будут значительно отличаться при использовании в более крупном приложении.
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Работа с JSON</h2>
+          <p>Сравните скорость UTF8-Json, System.Text.Json с некоторыми другими библиотеками</p>
+		  </br>
+		  
+		  <p>Мы сравним сериализацию и десериализацию. Нам нужно будет сравнить разные типы классов (маленькие и большие), списки и словари. И нам нужно будет сравнить цели сериализации: строки, потоки и массивы символов (массивы UTF-8). мы сделаем сериализацию в строку и десериализацию из строки.
+Для каждого мы протестируем разные типы объектов:
+- Небольшой класс всего с 3 свойствами примитивного типа
+- Класс побольше с примерно 25 свойствами, DateTime и парой перечислений
+- Список из 1000 наименований (малого класса)
+- Словарь на 1000 наименований (малого класса)
+			</p>
+			
+			<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			   <a href="docker pull bao2976/benchmarks">docker pull bao2976/benchmarks</a></br>
+			  <a href="https://github.com/itmo308555/Test-Json-library">https://github.com/itmo308555/Test-Json-library</a>
+           </p>
+			
+			</br>
+			<h2>Сериализация в строку </h2>
+<p>Первое, что мы проверим, - это сериализацию наших различных объектов в строку.</p>
+
+<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-1.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Serialize to String, small class</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1097.1 ns</td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>1353.1 ns</td>
+							
+						</tr>
+						<tr>
+							<td>DataContractJsonSerializer</td>
+							<td>2480.5 ns</td>
+							
+						</tr>
+						<tr>
+							<td>Jil</td>
+							<td>550.9 ns</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>258.6 ns</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>1026.4 ns</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-1.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Serialize to String, big class</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>8.287 us </td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>7.454 us</td>
+							
+						</tr>
+						<tr>
+							<td>DataContractJsonSerializer</td>
+							<td>15.470 us</td>
+							
+						</tr>
+						<tr>
+							<td>Jil</td>
+							<td>4.960 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>2.449 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>6.458 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+		<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-2.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Serialize to String, List</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1260.4 us </td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>1114.8 us</td>
+							
+						</tr>
+						<tr>
+							<td>DataContractJsonSerializer</td>
+							<td>1304.9 us</td>
+							
+						</tr>
+						<tr>
+							<td>Jil</td>
+							<td>170.9 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>2.449 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>859.4 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+			<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-3.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Serialize to String, List</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1260.4 us </td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>1114.8 us</td>
+							
+						</tr>
+						<tr>
+							<td>DataContractJsonSerializer</td>
+							<td>1304.9 us</td>
+							
+						</tr>
+						<tr>
+							<td>Jil</td>
+							<td>170.9 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>2.449 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>859.4 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-4.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Serialize to String, Dictionary</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1504.6 us  </td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>1108.5 us</td>
+							
+						</tr>
+						<tr>
+							<td>DataContractJsonSerializer</td>
+							<td>2595.8 us</td>
+							
+						</tr>
+						<tr>
+							<td>Jil</td>
+							<td>657.7 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>253.8 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>1372.6 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	</br>
+			<h2>Десериализация в строку</h2>
+
+
+<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-5.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Deserialize from String, small class</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1321.9 ns</td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>2558.8 ns</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Jil</td>
+							<td>479.0 ns</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>570.1 ns</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>727.0 ns</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	
+	
+	<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-6.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Deserialize from String, big class</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>12.365 us</td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>16.600 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Jil</td>
+							<td>5.494 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>8.259 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>8.829 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-7.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Deserialize from String, big class</h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1524.5 us</td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>1683.8 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Jil</td>
+							<td>542.5 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>507.1 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>1116.9 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	
+	
+	<div class="row">
+
+<div class="col-lg-4" data-aos="fade-right">
+		 
+            <img id="thumbnail" src="assets/img/anh-8.png" class="img-fluid" alt="">
+		 
+          </div>
+
+<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Deserialize from String, Dictionary </h3>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time</th>
+							
+							
+						</tr>
+						<tr>
+							<td>SystemTextJson </td>
+							<td>1779.3 us</td>
+							
+						</tr>
+						<tr>
+							<td>Newtonsoft</td>
+							<td>2106.8 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Jil</td>
+							<td>792.8 us</td>
+							
+						</tr>
+						
+						<tr>
+							<td>Utf8Json</td>
+							<td>1291.2 us</td>
+							
+							
+						</tr>
+							<tr>
+							<td>ServiceStack</td>
+							<td>1492.2 us</td>
+							
+							
+						</tr>
+						
+			</table>	
+            
+          </div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<p>
+    Исследования и эксперимент по скорости сериализации данных для 2-х библиотек, которые работают с JSON: UTF8-JSON, System.Text.JSON, и сравнить их скорость с некоторыми другими библиотеками.         
+
+    </p>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Оптимизация LINQ</h2>
+          <p> Ниже приведены некоторые тесты, показывающие улучшение скорости ответов на запросы с помощью LINQ.
+		  
+		</p>
+		
+		<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/linqyieldreturnbenchmarks">docker pull bao2976/linqyieldreturnbenchmarks</a></br>
+			  <a href="https://github.com/itmo308555/linqyeildreturn_test2">https://github.com/itmo308555/linqyeildreturn_test2</a>
+        </p>
+        </div>
+
+       <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-9.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					<h3>Использование Yield return и ToDictionary</h3>
+					<p>Протестируйте возвращенные результаты запроса с помощью Yield
+		Испытание генерации 1000 студентов с идентификатором и номером последовательности с 2 регулярными методами возврата и используя yield показан на рисунке
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							<th>Memory resource usage (kb)</th>
+							
+						</tr>
+						<tr>
+							<td>Обычно </td>
+							<td>431.56</td>
+							<td>133690 </td>
+							
+						</tr>
+						<tr>
+							<td>Yield</td>
+							<td>60.73ms</td>
+							<td>226</td>
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Исходя из вышеприведенных результатов, можно сделать вывод, что использование Yield обеспечивает лучшее время, а также гораздо меньшее использование памяти, чем нормальный возврат.</p>			
+            
+          </div>
+	</div>
+	
+	
+	
+	 <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-10.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					<h3>Тестирование производительности с помощью ToDictionary</h3>
+					<h3>Эксперимент 1: </h3>
+					<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/outsidelinqperformanceexamples">docker pull bao2976/outsidelinqperformanceexamples</a></br>
+			  <a href="https://github.com/itmo308555/LinqtoDictionary_test2">https://github.com/itmo308555/LinqtoDictionary_test2</a>
+        </p>
+					<p>
+Операция ToDictionary создает Dictionary типа <К,Т>, или, возможно, <К, Е>, если прототип имеет аргумент elementSelector, из входной последовательности типа Т, где К - тип ключа, а T - тип хранимых значений.
+В этом эксперименте описывается запрос, который возвращает 1000 товаров (с использованием Yield), с использованием ToDictionary, чтобы сравнить их производительность. Коды алгоритмов представлены на рисунках
+
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>Linq First </td>
+							<td>162453.4272</td>
+							
+							
+						</tr>
+						<tr>
+							<td>Linq ToDictionary</td>
+							<td>20.4065</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Использование метода ToDictionary показало повышение производительности более чем в 8000 раз.</p>			
+            
+          </div>
+	</div>
+	
+	
+	
+		 <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-11.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					
+					<h3>Эксперимент 2:</h3>
+					<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/linqtodictionary">docker pull bao2976/linqtodictionary</a></br>
+			  <a href="https://github.com/itmo308555/LinqtoDictionary_test1">https://github.com/itmo308555/LinqtoDictionary_test1</a>
+        </p>
+					<p>
+Существует задача: из заданных наборов выполнить поиск одинаковых элементов наборов (на основе кармического состояния). Эту базовую форму можно увидеть через такие проблемы, как: синтез данных о товарах со складов (в задаче управления складом), поиск похожих данных по строкам в файлах и сохранение в базе данных (проблема импорта данных), удаление повторяющихся данных (в проблеме синхронизации данных) и т. д.
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>Linq Join </td>
+							<td>3.8184</td>
+							
+							
+						</tr>
+						<tr>
+							<td>Linq ToDictionary</td>
+							<td>0.4023</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Наблюдается лучшая производительность при использовании Linq ToDictionary 0,4 мс по сравнению с Linq Join 3,8 мс.</p>			
+            
+          </div>
+	</div>
+	
+	
+	
+	
+	 <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-12.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					<h3>Использование ToList и ToArray</h3>
+					<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/linqusetolist">docker pull bao2976/linqusetolist</a></br>
+			  <a href="https://github.com/itmo308555/LinqUseToList">https://github.com/itmo308555/LinqUseToList</a>
+        </p>
+				
+					<p>
+Был проведен тест, показанный на рисунке, с использованием ToList, который показал его влияние на производительность запроса.
+
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>No ToList</td>
+							<td>1312.53</td>
+							
+							
+						</tr>
+						<tr>
+							<td>ToList</td>
+							<td>40.09</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Результаты показывают улучшение времени отклика при использовании ToList () для возврата результатов с 40,09 мс по сравнению с 1312,53 мс.</p>			
+            
+          </div>
+	</div>
+	
+	
+	
+	 <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-13.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					<h3>Использование Struct вместо Class</h3>
+					<p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/classvsstructv2">docker pull bao2976/classvsstructv2</a></br>
+			  <a href="https://github.com/itmo308555/test_ClassvsStruct">https://github.com/itmo308555/test_ClassvsStruct</a>
+        </p>
+				
+					<p>
+Был проведен тест примерно с 1000000, сравнивающий производительность Struct и Class.
+
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>Class</td>
+							<td>109.422</td>
+							
+							
+						</tr>
+						<tr>
+							<td>Struct</td>
+							<td>9.768</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Результаты показывают улучшение времени отклика при использовании Struct для возврата результатов с 9.768 мс по сравнению с 109.422 мс.</p>			
+            
+          </div>
+	</div>
+	
+	
+
+      </div>
+    </section><!-- End Services Section -->
+
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>ИСПОЛЬЗОВАНИЕ gRPC</h2>
+          <p>Сравнение производительности gRPC с Rest API </p>
+		  <p class="fst-italic">
+              Пример кода можно посмотреть по 2 ссылкам ниже:
+			  <a href="docker pull bao2976/codingmilitiarestvsgrpcsamplebenchmark">docker pull bao2976/codingmilitiarestvsgrpcsamplebenchmark</a></br>
+			  <a href="https://github.com/itmo308555/gRPCvsRest">https://github.com/itmo308555/gRPCvsRest</a>
+        </p>
+        </div>
+
+         <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-14.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					
+					<h3>Эксперимент 1: </h3>
+					<p>
+В этом эксперименте мы создали 2 сервера: один - gRPC (с использованием Protobuf), а другой - с использованием REST. Оба сервера отвечают ключевым словом «Hello Word». Мы запустили тест на обоих серверах с 1000 входящих подключений к каждому серверу.
+
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>Rest </td>
+							<td>387.9</td>
+							
+							
+						</tr>
+						<tr>
+							<td>gRPC</td>
+							<td>438.0</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>Результаты показывают, что при нормальном доступе к серверу Rest, кажется, немного быстрее, чем gRPC: 387,9 мс для Rest и 438,0 мс для gRPC.</p>			
+            
+          </div>
+	</div>
+	
+	
+	
+		 <div class="row">
+
+		<div class="col-lg-4" data-aos="fade-right">
+				 
+					<img id="thumbnail" src="assets/img/anh-15.png" class="img-fluid" alt="">
+				 
+				  </div>
+
+		<div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+					
+					<h3>Эксперимент 2:</h3>
+					<p>
+В этом тесте мы продолжаем создавать 2 сервера, один - gRPC (с использованием Protobuf), а другой - с использованием REST. Но здесь мы попросили сервер делать случайные ответы на 1000 последовательных запросов к серверу (т.е. генерировать большую загрузку страницы). Результаты были разные!
+		</p>
+                   
+			<table border="1" class="table table-bordered">
+						<tr>
+							<th>Method</th>
+							<th>Time (ms)</th>
+							
+							
+						</tr>
+						<tr>
+							<td>Rest</td>
+							<td>4.277</td>
+							
+							
+						</tr>
+						<tr>
+							<td>Grpc</td>
+							<td>1.952</td>
+							
+							
+						</tr>
+						
+						
+						
+			</table>
+ <p>При большой загрузке веб-сайта, т.е. при большом количестве запросов на выполнение команд к серверу, отдых был намного медленнее, чем gRPC: 4277 с по сравнению с 1 952 с.</p>
+ </br>
+ <p>
+Этот тест показывает, что gRPC быстрее. Это связано с тем, что gRPC обычно использует буферы протокола. (Это механизм для сериализации структурированных данных), тогда как REST обычно отправляет данные в XML или JSON. gRPC использует HTTP/ 2 для поддержки масштабируемых и высокопроизводительных API-интерфейсов и использует двоичные данные вместо простого текста, что делает взаимодействие более компактным и эффективным.
+</p>			
+            
+          </div>
+	</div>
+	
+	
+
+         
+         
+        
+
+      </div>
+    </section><!-- End Contact Section -->
+	
+	
+	
+	<section id="Обратная" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Обратная связь</h2>
+       
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Университет ИТМО (ITMO University)</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>tqb.hn90@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+79817510366</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Чинь Куок Бао</span></strong>
+      </div>
+      <div class="credits">
+       
+        Designed by <a href="#">Чинь Куок Бао</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
